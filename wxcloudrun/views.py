@@ -32,13 +32,10 @@ table_engine = PPStructure(show_log=False)
 
 
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p >"
 
-@app.route('/')
-def index():
-    """
-    :return: 返回index页面
-    """
-    return render_template('index.html')
 
 
 @app.route("/receive", methods=['POST', 'GET'])
