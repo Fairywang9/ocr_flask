@@ -43,7 +43,7 @@ def index():
 
 @app.route("/receive", methods=['POST', 'GET'])
 def receive():
-    img_path =  r'E:\AI\project\ocr\jieqing\121.jpg'
+    img_path =  "https://636c-cloud1-9g31hv999af9dd5c-1313358468.tcb.qcloud.la/my-photo.png?sign=5d0ff1562354b4a8816f362e99f13dde&t=1662945841"
     img = cv2.imread(img_path)
     result = table_engine(img)
     print('==============')
